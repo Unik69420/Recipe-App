@@ -5,12 +5,13 @@
   font-family: Arial, sans-serif;
 }
 body {
-  background-color: rgba(108, 167, 71, 0.745);
+  background-color: --primary-color;
 }
 .container {
-  background-color: rgba(95, 149, 196, 0.636);
+  background-color: #ffffff6e;
   font-size: 16px;
   padding: 3rem 2.8em;
+  width: 90vh;
   max-width: 32em;
   position: absolute;
   transform: translate(-50%);
@@ -31,19 +32,123 @@ body {
   padding: 0.6em;
   border: none;
   outline: none;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #202030;
 }
 .search-container button {
   font: size 1em;
-  background-color: rgb(214, 214, 11);
+  background-color: rgb(245, 220, 0);
   border: none;
   font-weight: 600;
   border-radius: 0.3em;
   border-radius: 10px;
 }
 .search-container button:hover {
-  background-color: rgb(231, 231, 12);
+  background-color: rgb(255, 230, 0);
 }
 .search-container button:active {
-  background-color: rgb(252, 252, 10);
+  background-color: rgb(240, 216, 0);
+}
+img {
+  display: block;
+  width: 50%;
+  margin: 1.8em auto 0 auto;
+  border-radius: 10px;
+}
+.details {
+  background-color: --primary-color;
+  position: relative;
+  margin: 0.1em 0 0 0;
+  text-align: center;
+  padding: 0.6em 0;
+}
+.detail h2 {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.detail h4 {
+  font-size: 1em;
+  font-weight: 400;
+}
+#show-recipe {
+  font-size: 1em;
+  position: relative;
+  left: 75%;
+  padding: 0.9em 0.6em;
+  background-color: rgb(245, 220, 0);
+  border: none;
+  top: 1.5em;
+  border-radius: 0.3em;
+  font-weight: 600;
+}
+#show-recipe:hover {
+  background-color: rgb(255, 230, 0);
+}
+#show-recipe:active {
+  background-color: rgb(240, 216, 0);
+}
+#recipe {
+  position: absolute;
+  background-color: #ffffff;
+  min-height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  border-radius: 0.6em;
+  display: none;
+  color: black;
+}
+#recipe pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 2.5em 1.2em 1.2em 1.2em;
+}
+#hide-recipe {
+  font-size: 1em;
+  position: relative;
+  width: 1.8em;
+  height: 1.8em;
+  background-color: rgb(245, 220, 0);
+  border: none;
+  top: 1.2em;
+  left: 90%;
+  border-radius: 0.3em;
+}
+ul {
+  font-size: 1em;
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.8em 1.1em;
+  padding: 1.2em 0 0 1.2em;
+}
+h3 {
+  text-align: center;
+  margin-top: 1.8em;
+  color: #202030;
+}
+#icon {
+  width: 45px;
+  cursor: pointer;
+  position: fixed;
+  right: 90px;
+  top: 0;
+}
+body {
+  background-color: var(--primary-color);
+}
+:root {
+  --primary-color: #dadada;
+  --secondary-color: #ffffff;
+}
+.dark-theme {
+  --primary-color: #2d2e31;
+  --secondary-color: #ffffff6e;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 2rem 1rem;
+    font-size: 14px;
+  }
 }
