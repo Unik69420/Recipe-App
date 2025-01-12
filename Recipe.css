@@ -8,7 +8,7 @@ body {
   background-color: --primary-color;
 }
 .container {
-  background-color: #ffffff6e;
+  background-color: var(--secondary-color);
   font-size: 16px;
   padding: 3rem 2.8em;
   width: 90vh;
@@ -90,6 +90,7 @@ img {
   background-color: rgb(240, 216, 0);
 }
 #recipe {
+  font-size: 1.1em;
   position: absolute;
   background-color: var(--secondary-color);
   min-height: 100%;
@@ -118,7 +119,7 @@ img {
   border-radius: 0.3em;
 }
 ul {
-  font-size: 1em;
+  font-size: 1.04em;
   position: relative;
   display: grid;
   grid-template-columns: auto auto;
