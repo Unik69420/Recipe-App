@@ -60,14 +60,17 @@ img {
   margin: 0.1em 0 0 0;
   text-align: center;
   padding: 0.6em 0;
+  color: var(--font-color);
 }
 .detail h2 {
   font-size: 1.2em;
   font-weight: 600;
+  color: var(--font-color);
 }
 .detail h4 {
   font-size: 1em;
   font-weight: 400;
+  color: var(--font-color);
 }
 #show-recipe {
   font-size: 1em;
@@ -88,7 +91,7 @@ img {
 }
 #recipe {
   position: absolute;
-  background-color: #ffffff;
+  background-color: var(--secondary-color);
   min-height: 100%;
   width: 100%;
   top: 0;
@@ -96,7 +99,7 @@ img {
   z-index: 2;
   border-radius: 0.6em;
   display: none;
-  color: black;
+  color: var(--font-color);
 }
 #recipe pre {
   white-space: pre-wrap;
@@ -121,11 +124,12 @@ ul {
   grid-template-columns: auto auto;
   gap: 0.8em 1.1em;
   padding: 1.2em 0 0 1.2em;
+  color: var(--font-color);
 }
 h3 {
   text-align: center;
   margin-top: 1.8em;
-  color: #202030;
+  color: var(--font-color);
 }
 #icon {
   width: 45px;
@@ -138,12 +142,14 @@ body {
   background-color: var(--primary-color);
 }
 :root {
-  --primary-color: #dadada;
+  --primary-color: #bbbbbb;
   --secondary-color: #ffffff;
+  --font-color: black;
 }
 .dark-theme {
   --primary-color: #2d2e31;
-  --secondary-color: #ffffff6e;
+  --secondary-color: rgb(132, 132, 132);
+  --font-color: white;
 }
 
 @media screen and (max-width: 500px) {
