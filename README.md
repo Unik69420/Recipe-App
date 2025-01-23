@@ -1,6 +1,6 @@
 # Recipe App
 
-A simple web app built with **HTML**, **CSS**, and **JavaScript** that fetches recipe data from an API. Users can search for recipes and view a picture of the food, its ingredients, and the full recipe when the "Show Recipe" button is clicked.
+A simple web app built with **HTML**, **CSS**, and **JavaScript** that fetches recipe data from an open API. Users can search for recipes and view a picture of the food, its ingredients, and the full recipe when the "Show Recipe" button is clicked.
 
 ## Features
 
